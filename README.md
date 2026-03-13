@@ -46,10 +46,14 @@ Berikut adalah tampilan antarmuka pengguna berbasis teks saat aplikasi dijalanka
 
 ### Contoh Penggunaan Fitur
 
+
 **Menyelesaikan Perbandingan:**
+
 ![Screenshot](Screenshot/2.png)
 
+
 **Memfaktorkan Akar Kuadrat:**
+
 ![Screenshot](Screenshot/3.png)
 
 
