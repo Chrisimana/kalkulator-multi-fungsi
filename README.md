@@ -1,137 +1,96 @@
-# 🧮 Multi-Function Calculator
+# 🧮 Kalkulator Multi-Fungsi
 
 <div align="center">
 
-![Python Version](https://img.shields.io/badge/python-3.7%2B-blue)
-![License](https://img.shields.io/badge/license-MIT-green)
-![Status](https://img.shields.io/badge/status-active-success)
+[![Python Version](https://img.shields.io/badge/python-3.7%2B-blue)](https://www.python.org/)
+[![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
+![Status](https://img.shields.io/badge/status-stable-brightgreen)
 ![CLI](https://img.shields.io/badge/interface-CLI-lightgrey)
-![FreeCodeCamp](https://img.shields.io/badge/FreeCodeCamp-Project-brightgreen)
-
-**Kalkulator multi-fungsi untuk menyelesaikan berbagai masalah matematika - Project Pelatihan FreeCodeCamp**
-
-[Fitur](#-fitur) • [Instalasi](#-instalasi) • [Penggunaan](#-penggunaan) • [Dokumentasi](#-dokumentasi)
+[![FreeCodeCamp](https://img.shields.io/badge/FreeCodeCamp-Project-brightgreen)](https://www.freecodecamp.org/certification/chrisimana/college-algebra-with-python-v8)
 
 </div>
 
-## 📋 Daftar Isi
+## 📋 Deskripsi Proyek
 
-- [Gambaran Umum](#-gambaran-umum)
-- [Fitur](#-fitur)
-- [Instalasi](#-instalasi)
-- [Penggunaan](#-penggunaan)
-- [Dokumentasi](#-dokumentasi)
-- [Contoh Penggunaan](#-contoh-penggunaan)
-- [FAQ](#-faq)
+**Kalkulator Multi-Fungsi** adalah aplikasi kalkulator serbaguna berbasis terminal (Command Line Interface) yang dibangun dengan Python untuk menyelesaikan berbagai masalah matematika. Proyek ini bertujuan menyediakan alat bantu hitung yang cepat, akurat, dan mudah digunakan untuk operasi seperti menyelesaikan perbandingan, mencari nilai variabel dalam persamaan linear, menyederhanakan akar kuadrat, serta melakukan konversi antara desimal, pecahan, dan persen. 
 
-## 🚀 Gambaran Umum
+## 📑 Daftar Isi
 
-**Multi-Function Calculator** adalah aplikasi kalkulator serbaguna yang dibangun dengan Python untuk menyelesaikan berbagai jenis masalah matematika. Aplikasi ini dikembangkan sebagai bagian dari syarat lulus pelatihan FreeCodeCamp dan menyediakan antarmuka command-line yang sederhana namun powerful dengan berbagai fungsi matematika yang berguna untuk siswa, guru, dan profesional.
+- [Deskripsi Proyek](#-deskripsi-proyek)
+- [Demo / Live Preview](#-demo--live-preview)
+- [Screenshot / Tampilan Aplikasi](#-screenshot--tampilan-aplikasi)
+- [Latar Belakang / Motivasi](#-latar-belakang--motivasi)
+- [Fitur Utama](#-fitur-utama)
+- [Teknologi yang Digunakan](#-teknologi-yang-digunakan)
+- [Arsitektur / Konsep Sistem](#-arsitektur--konsep-sistem)
+- [Struktur Proyek](#-struktur-proyek)
+- [Cara Instalasi / Setup](#-cara-instalasi--setup)
+- [Cara Penggunaan](#-cara-penggunaan)
+- [Peran Developer](#-peran-developer)
+- [Pembelajaran dari Proyek](#-pembelajaran-dari-proyek-lessons-learned)
+- [Pengembangan Selanjutnya](#-pengembangan-selanjutnya-future-improvements)
+- [Kontribusi](#-kontribusi)
+- [Lisensi](#-lisensi)
+- [Kontak atau Informasi Pengembang](#-kontak-atau-informasi-pengembang)
+- [Ucapan Terima Kasih](#-ucapan-terima-kasih--acknowledgement)
 
-### ✨ Highlights
+## 🎮 Demo / Live Preview
 
-- 🎯 **Multiple Functions** - Enam fungsi matematika berbeda dalam satu aplikasi
-- 🧮 **Proportion Solver** - Menyelesaikan dan memverifikasi proporsi
-- 🔢 **Equation Solver** - Menyelesaikan persamaan linear
-- 📐 **Square Root Simplifier** - Menyederhanakan bentuk akar kuadrat
-- 🔄 **Conversion Tools** - Konversi antara desimal, pecahan, dan persen
-- 🛡️ **Error Handling** - Penanganan error yang robust untuk input tidak valid
-- 🎓 **Educational Purpose** - Cocok untuk pembelajaran matematika dan programming
+Karena aplikasi ini berjalan di terminal, tidak ada pratinjau langsung secara *online*. Anda dapat menjalankannya secara lokal di komputer Anda dengan mengikuti petunjuk instalasi pada bagian [Cara Instalasi / Setup](#-cara-instalasi--setup).
 
-## 🌟 Fitur
+## 📸 Tampilan Aplikasi
 
-### 🤖 Core Features
-- **Penyelesaian Proporsi** - Menyelesaikan `a/b = c/d` untuk variabel x
-- **Penyelesaian Persamaan** - Menyelesaikan persamaan linear `ax + b = c`
-- **Penyederhanaan Akar** - Memfaktorkan bilangan menjadi bentuk akar sederhana
-- **Multiple Responses** - Berbagai format output yang informatif
+Berikut adalah tampilan antarmuka pengguna berbasis teks saat aplikasi dijalankan:
+![Screenshot](Screenshot/1.png)
 
-### 🛠️ Utility Features
-- **🧮 Decimal Conversion** - Konversi desimal ke pecahan dan persentase
-- **📊 Fraction Conversion** - Konversi pecahan ke desimal dan persentase
-- **📈 Percent Conversion** - Konversi persen ke desimal dan pecahan
-- **🔍 Input Validation** - Validasi input untuk mencegah error
 
-### 💾 Data Management
-- **Real-time Processing** - Pemrosesan langsung tanpa penyimpanan data
-- **Error Prevention** - Penanganan division by zero dan input invalid
-- **User-Friendly Prompts** - Petunjuk input yang jelas dan mudah dimengerti
+### Contoh Penggunaan Fitur
 
-### 🎨 CLI Features
-- **Clean Interface** - Antarmuka command-line yang bersih dan terorganisir
+**Menyelesaikan Perbandingan:**
+![Screenshot](Screenshot/2.png)
+
+**Memfaktorkan Akar Kuadrat:**
+![Screenshot](Screenshot/3.png)
+
+
+## 🎯 Latar Belakang
+
+Proyek ini dibuat untuk memenuhi kebutuhan akan alat bantu hitung sederhana namun serbaguna yang dapat diakses dengan cepat melalui terminal. Motivasi utamanya adalah:
+
+- **Menggabungkan fungsi-fungsi matematika yang sering digunakan** ke dalam satu program ringkas
+- **Menyediakan antarmuka yang mudah digunakan** tanpa perlu aplikasi kalkulator terpisah
+- **Membantu pembelajaran matematika** dengan memberikan solusi langkah demi langkah
+- **Portabilitas tinggi** - dapat dijalankan di perangkat mana pun yang memiliki Python
+- **Edukasi pemrograman** - sebagai contoh implementasi logika matematika dalam kode Python
+
+Selain itu, proyek ini juga dibuat sebagai salah satu persyaratan untuk memperoleh sertifikat dari platform pembelajaran online freeCodeCamp, sehingga sekaligus menjadi bagian dari proses pembelajaran dan pengembangan portofolio pemrograman.
+
+## 🌟 Fitur Utama
+
+### 🧮 Fungsi Matematika Dasar
+- **Penyelesaian Perbandingan** - Menyelesaikan `a/b = c/d` untuk variabel x atau memverifikasi kebenaran proporsi
+- **Penyelesaian Persamaan Linear** - Menyelesaikan `ax + b = c` untuk mencari nilai x
+- **Penyederhanaan Akar Kuadrat** - Memfaktorkan √n ke dalam bentuk `a√b` yang lebih sederhana
+
+### 🔄 Fitur Konversi
+- **Desimal → Pecahan & Persen** - Mengubah bilangan desimal ke bentuk pecahan dan persentase
+- **Pecahan → Desimal & Persen** - Mengubah pecahan ke bentuk desimal dan persentase
+- **Persen → Desimal & Pecahan** - Mengubah persentase ke bentuk desimal dan pecahan
+
+### 🛡️ Fitur Pendukung
+- **Input Validation** - Validasi input untuk mencegah error (pembagian dengan nol, input tidak valid)
+- **Error Handling** - Penanganan exception yang robust agar program tidak crash
+- **User-Friendly Prompts** - Petunjuk input yang jelas dan mudah dipahami
 - **Interactive Menu** - Menu interaktif dengan navigasi mudah
-- **Clear Instructions** - Instruksi yang jelas untuk setiap operasi
-- **Immediate Feedback** - Hasil perhitungan yang langsung ditampilkan
 
-## 📥 Instalasi
+## 🛠️ Teknologi yang Digunakan
 
-### Prerequisites
+- **Python 3.7+** - Bahasa pemrograman utama
+- **SymPy** - Library untuk komputasi simbolik matematika (diimpor untuk pengembangan future)
+- **Math** - Library bawaan Python untuk fungsi matematika
+- **Fractions** - Library bawaan Python untuk menangani operasi pecahan
 
-- Python 3.7 atau lebih tinggi
-- Library standar Python (math, fractions, sympy)
-
-### Step-by-Step Installation
-
-1. **Download Script**
-   ```bash
-   # Download file Python calculator.py
-   ```
-
-2. **Verifikasi Dependencies**
-   ```bash
-   python -c "import math, fractions, sympy; print('Dependencies OK')"
-   ```
-
-3. **Run Application**
-   ```bash
-   python calculator.py
-   ```
-
-### Quick Install
-```bash
-# Langsung jalankan file
-python multi_function_calculator.py
-```
-
-## 🎮 Penggunaan
-
-### Menjalankan Aplikasi
-
-```bash
-python calculator.py
-```
-
-### Basic Usage
-
-1. **Memilih Operasi**
-   - Pilih nomor 1-6 untuk fungsi matematika yang diinginkan
-   - Pilih 7 untuk keluar dari program
-   - Ikuti petunjuk input yang ditampilkan
-
-2. **Fitur Matematika**
-   ```
-   1. Solve proportions (a/b = c/d)
-   2. Solve for x in equations (ax + b = c)  
-   3. Factor square roots (√n)
-   4. Convert decimals to fractions and percents
-   5. Convert fractions to decimals and percents
-   6. Convert percents to decimals and fractions
-   ```
-
-3. **Input Format**
-   - Untuk proporsi: masukkan nilai a, b, c, dan 'x' untuk variabel
-   - Untuk persamaan: masukkan koefisien a, konstanta b, dan nilai c
-   - Untuk konversi: masukkan nilai dalam format yang diminta
-
-### Keyboard Shortcuts
-
-| Action | Method |
-|--------|--------|
-| Pilih operasi | Masukkan angka 1-7 |
-| Input nilai | Masukkan angka atau 'x' untuk variabel |
-| Keluar aplikasi | Pilih opsi 7 |
-
-## 📚 Dokumentasi
+## 🏗️ Arsitektur / Konsep Sistem
 
 ### Workflow Diagram
 
@@ -139,145 +98,192 @@ python calculator.py
 graph TD
     A[Start Program] --> B[Display Main Menu]
     B --> C{User Input Choice}
-    C --> D[Execute Selected Function]
+    C -->|1-6| D[Execute Selected Function]
+    C -->|7| I[Exit Program]
     D --> E[Get User Inputs]
-    E --> F[Process Mathematical Operation]
-    F --> G[Display Results]
-    G --> H{Continue?}
-    H -->|Yes| B
-    H -->|No| I[Exit Program]
+    E --> F[Validate Input]
+    F -->|Valid| G[Process Mathematical Operation]
+    F -->|Invalid| H[Display Error Message]
+    H --> B
+    G --> J[Display Results]
+    J --> B
 ```
 
-### Function Descriptions
+### Algoritma Utama
 
-| Function | Description |
-|------|-------------|
-| `solve_proportion()` | Menyelesaikan proporsi a/b = c/d untuk x atau memverifikasi kebenaran proporsi |
-| `solve_for_x()` | Menyelesaikan persamaan linear ax + b = c untuk variabel x |
-| `factor_square_root()` | Menyederhanakan bentuk akar kuadrat √n menjadi a√b |
-| `decimal_conversion()` | Mengkonversi desimal ke bentuk pecahan dan persentase |
-| `fraction_conversion()` | Mengkonversi pecahan ke bentuk desimal dan persentase |
-| `percent_conversion()` | Mengkonversi persentase ke bentuk desimal dan pecahan |
-| `main()` | Mengontrol alur program utama dan menampilkan menu |
+| Fungsi | Algoritma | Kompleksitas |
+|------|------|-------------|
+| **Penyelesaian Perbandingan** | Perkalian silang: jika d='x', x=(b*c)/a; else validasi a*d == b*c | O(1) |
+| **Penyelesaian Persamaan** | Jika a=0: cek infinite solutions; else x=(c-b)/a | O(1) |
+| **Faktorisasi Akar** | Cari faktor kuadrat sempurna terbesar dari n dengan iterasi menurun | O(√n) |
+| **Konversi Desimal** | Fraction(desimal).limit_denominator() untuk pecahan, desimal*100 untuk persen | O(log n) |
 
-### Mathematical Algorithms
+## 📁 Struktur Proyek
 
-**Proporsi Solver:**
-```python
-if d == 'x':
-    x = (b * c) / a
-else:
-    result = (a * d) == (b * c)
+```
+kalkulator-multi-fungsi/
+│
+├── Screenshot/
+│   ├── 1.png               
+│   ├── 2.png                
+│   └── 3.png               
+│
+├── src/
+│   └── main.py              
+│
+├── LICENSE.md              
+└── README.md              
+
 ```
 
-**Equation Solver:**
-```python
-if a == 0:
-    if b == c: infinite solutions
-    else: no solution
-else:
-    x = (c - b) / a
+### Penjelasan File
+
+| File / Folder      | Fungsi                                                                                     |
+| ------------------ | ------------------------------------------------------------------------------------------ |
+| `src/main.py`      | Berisi kode utama program kalkulator multi fungsi termasuk logika perhitungan dan menu CLI |
+| `Screenshot/`      | Folder yang berisi gambar tampilan program sebagai dokumentasi penggunaan                  |
+| `Screenshot/1.png` | Contoh tampilan program kalkulator                                                   |
+| `Screenshot/2.png` | Contoh tampilan fitur kalkulator                                                     |
+| `Screenshot/3.png` | Contoh tampilan fitur program                                           |
+| `README.md`        | Dokumentasi lengkap proyek      |
+| `LICENSE.md`       | File lisensi proyek (MIT License)                                |
+
+
+## 📥 Cara Instalasi / Setup
+
+### Prasyarat
+
+- Python 3.7 atau lebih tinggi
+- Pip (Python package installer)
+
+### Langkah-langkah Instalasi
+
+1. **Clone Repository**
+   ```bash
+   git clone https://github.com/Chrisimana/kalkulator-multi-fungsi
+   cd kalkulator-multi-fungsi
+   ```
+
+2. **Buat Virtual Environment (Opsional)**
+   ```bash
+   # Windows
+   python -m venv venv
+   venv\Scripts\activate
+   
+   # Linux/Mac
+   python3 -m venv venv
+   source venv/bin/activate
+   ```
+
+3. **Install Dependencies**
+   ```bash
+   pip install sympy
+   ```
+   
+
+4. **Jalankan Aplikasi**
+   ```bash
+   python src/main.py
+   ```
+
+## 🎮 Cara Penggunaan
+
+### Menjalankan Aplikasi
+
+```bash
+python src/main.py
 ```
 
-**Square Root Simplifier:**
-```python
-for i from sqrt(n) down to 1:
-    if n % (i*i) == 0:
-        simplified = i√(n/(i*i))
-```
+### Navigasi Menu
 
-## 💡 Contoh Penggunaan
+1. **Memilih Operasi**
+   - Masukkan angka **1-6** untuk memilih fungsi matematika
+   - Masukkan angka **7** untuk keluar dari program
 
-### Basic Operation
-```
-Multi-Function Calculator
-=========================
+2. **Input Data**
+   - Ikuti petunjuk input yang ditampilkan
+   - Masukkan angka sesuai permintaan
+   - Untuk fitur perbandingan, Anda dapat memasukkan 'x' sebagai variabel yang dicari
 
-Select an operation:
-1. Solve proportions
-2. Solve for x in equations
-3. Factor square roots
-4. Convert decimals to fractions and percents
-5. Convert fractions to decimals and percents
-6. Convert percents to decimals and fractions
-7. Exit
+3. **Melihat Hasil**
+   - Hasil perhitungan akan langsung ditampilkan
+   - Program akan kembali ke menu utama setelah selesai
 
-Enter your choice (1-7): 1
+### Panduan Per Fitur
 
-Solving Proportions (a/b = c/d)
-Enter a: 2
-Enter b: 3
-Enter c: 4
-Enter d (or 'x' to solve for x): x
-Solution: x = 6.0
-```
+| Fitur | Cara Penggunaan | Contoh Input |
+|------|-----------------|--------------|
+| **Perbandingan** | Masukkan a, b, c, dan d (atau 'x' untuk mencari) | a=2, b=3, c=4, d='x' → x=6 |
+| **Persamaan Linear** | Masukkan a, b, c dari ax + b = c | a=2, b=5, c=11 → x=3 |
+| **Akar Kuadrat** | Masukkan bilangan positif n | n=50 → 5√2 |
+| **Konversi Desimal** | Masukkan bilangan desimal | 0.75 → 3/4, 75% |
+| **Konversi Pecahan** | Masukkan pembilang dan penyebut | 3/8 → 0.375, 37.5% |
+| **Konversi Persen** | Masukkan persen (tanpa %) | 25 → 0.25, 1/4 |
 
-### Advanced Features
-```
-Enter your choice (1-7): 2
+### Shortcuts
 
-Solving for x in equations (ax + b = c)
-Enter coefficient of x (a): 2
-Enter constant term (b): 5
-Enter right side value (c): 11
-Solution: x = 3.0
+| Aksi | Cara |
+|------|------|
+| Pilih operasi | Masukkan angka 1-7 |
+| Input variabel | Masukkan 'x' untuk nilai yang dicari |
+| Keluar | Pilih opsi 7 atau tekan Ctrl+C |
+| Ulang operasi | Program otomatis kembali ke menu |
 
-Enter your choice (1-7): 3
+## 👨‍💻 Peran Developer
 
-Factoring Square Roots (√n)
-Enter a positive integer: 50
-√50 = 5√2
-```
+Sebagai pengembang tunggal proyek ini, saya bertanggung jawab atas:
 
-### Conversion Examples
-```
-Enter your choice (1-7): 4
+- **Perancangan Sistem** - Mendesain arsitektur aplikasi dan alur menu
+- **Pengembangan Backend** - Menulis seluruh logika perhitungan matematika dalam Python
+- **Implementasi Algoritma** - Menerjemahkan rumus matematika ke dalam kode program
+- **Error Handling** - Membuat sistem penanganan exception yang robust
+- **User Experience** - Mendesain antarmuka CLI yang ramah pengguna
+- **Pengujian** - Melakukan uji coba pada setiap fungsi untuk memastikan akurasi
+- **Dokumentasi** - Membuat dokumentasi proyek yang jelas dan mudah dipahami
 
-Converting Decimals to Fractions and Percents
-Enter a decimal number: 0.75
-Fraction: 3/4
-Percent: 75.0%
+## 📚 Pembelajaran dari Proyek (Lessons Learned)
 
-Enter your choice (1-7): 5
+Selama pengembangan proyek ini, saya mempelajari:
 
-Converting Fractions to Decimals and Percents
-Enter numerator: 3
-Enter denominator: 8
-Decimal: 0.375
-Percent: 37.5%
+### Technical Skills
+- **Implementasi Logika Matematika** - Cara menerjemahkan rumus matematika seperti perkalian silang dan faktorisasi akar ke dalam kode Python
+- **Penggunaan Library Bawaan** - Memanfaatkan modul `math`, `fractions.Fraction`, dan penanganan `exception`
+- **Algoritma Faktorisasi** - Mengembangkan algoritma untuk mencari faktor kuadrat sempurna terbesar
+- **Penanganan Error** - Mengantisipasi input tidak valid (pembagian nol, tipe data salah)
 
-Enter your choice (1-7): 6
+### Soft Skills
+- **Desain CLI yang Ramah Pengguna** - Membuat alur interaksi yang intuitif
+- **Problem Solving** - Memecahkan masalah matematika ke dalam langkah-langkah algoritmik
+- **Code Organization** - Menstruktur kode dengan fungsi-fungsi yang terpisah dan reusable
 
-Converting Percents to Decimals and Fractions
-Enter a percent (without % sign): 25
-Decimal: 0.25
-Fraction: 1/4
-```
 
-## ❓ FAQ
+## 📄 Lisensi
 
-### Q: Apakah perlu install library tambahan?
-**A:** Tidak! Kalkulator ini menggunakan pure Python standard library saja (math, fractions, sympy).
+Proyek ini dilisensikan di bawah **MIT License** - lihat file [LICENSE](LICENSE) untuk detail.
 
-### Q: Bagaimana cara menyelesaikan proporsi dengan variabel?
-**A:** Masukkan 'x' untuk nilai d yang tidak diketahui, sistem akan menghitung secara otomatis.
 
-### Q: Apa yang terjadi jika memasukkan denominator nol?
-**A:** Program akan mendeteksi dan menampilkan error "Denominator cannot be zero".
+## 🙏 Ucapan Terima Kasih
 
-### Q: Bagaimana format input untuk persentase?
-**A:** Masukkan angka tanpa simbol % (contoh: 25 untuk 25%).
+Terima kasih kepada semua pihak yang telah membantu dalam pengembangan proyek ini:
 
-### Q: Apakah program ini cocok untuk pembelajaran matematika?
-**A:** Sangat cocok! Program ini dirancang untuk membantu memahami konsep proporsi, persamaan, dan konversi numerik.
+- **FreeCodeCamp** - Atas kurikulum dan inspirasi proyek
+- **Python Community** - Atas dokumentasi dan library yang luar biasa
+- **SymPy Developers** - Atas library komputasi simbolik yang powerful
+- **Shields.io** - Atas layanan badges yang keren
+- **Semua Kontributor** - Yang telah meluangkan waktu untuk berkontribusi
+- **Pengguna** - Yang menggunakan dan memberikan feedback untuk proyek ini
 
-### Q: Bisakah menangani bilangan negatif?
-**A:** Untuk square roots hanya menerima positive integer. Operasi lain bisa menangani bilangan negatif.
+### Referensi
+
+- [Python Documentation](https://docs.python.org/3/)
+- [SymPy Documentation](https://docs.sympy.org/)
+- [Fractions Module](https://docs.python.org/3/library/fractions.html)
+- [Math Module](https://docs.python.org/3/library/math.html)
 
 ---
 
 <div align="center">
 
-**⭐ Jangan lupa beri bintang jika project ini membantu! ⭐**
+**⭐ Jika proyek ini bermanfaat, jangan lupa berikan bintang di GitHub! ⭐**
 
 </div>
