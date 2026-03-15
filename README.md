@@ -12,39 +12,33 @@
 
 ## 📋 Deskripsi Proyek
 
-**Kalkulator Multi-Fungsi** adalah aplikasi kalkulator serbaguna berbasis terminal (Command Line Interface) yang dibangun dengan Python untuk menyelesaikan berbagai masalah matematika. Proyek ini bertujuan menyediakan alat bantu hitung yang cepat, akurat, dan mudah digunakan untuk operasi seperti menyelesaikan perbandingan, mencari nilai variabel dalam persamaan linear, menyederhanakan akar kuadrat, serta melakukan konversi antara desimal, pecahan, dan persen. 
+**Kalkulator Multi Fungsi** adalah aplikasi kalkulator serbaguna berbasis terminal (Command Line Interface) yang dibangun dengan Python untuk menyelesaikan berbagai masalah matematika. Proyek ini bertujuan menyediakan alat bantu hitung yang cepat, akurat, dan mudah digunakan untuk operasi seperti menyelesaikan perbandingan, mencari nilai variabel dalam persamaan linear, menyederhanakan akar kuadrat, serta melakukan konversi antara desimal, pecahan, dan persen. 
 
 ## 📑 Daftar Isi
 
 - [Deskripsi Proyek](#-deskripsi-proyek)
-- [Demo / Live Preview](#-demo--live-preview)
-- [Screenshot / Tampilan Aplikasi](#-screenshot--tampilan-aplikasi)
-- [Latar Belakang / Motivasi](#-latar-belakang--motivasi)
+- [Demo Program](#-demo-program)
+- [Tampilan Aplikasi](#-tampilan-aplikasi)
+- [Latar Belakang](#-latar-belakang)
 - [Fitur Utama](#-fitur-utama)
 - [Teknologi yang Digunakan](#-teknologi-yang-digunakan)
-- [Arsitektur / Konsep Sistem](#-arsitektur--konsep-sistem)
+- [Arsitektur](#-arsitektur)
 - [Struktur Proyek](#-struktur-proyek)
-- [Cara Instalasi / Setup](#-cara-instalasi--setup)
+- [Cara Instalasi](#-cara-instalasi)
 - [Cara Penggunaan](#-cara-penggunaan)
 - [Peran Developer](#-peran-developer)
 - [Pembelajaran dari Proyek](#-pembelajaran-dari-proyek-lessons-learned)
-- [Pengembangan Selanjutnya](#-pengembangan-selanjutnya-future-improvements)
-- [Kontribusi](#-kontribusi)
-- [Lisensi](#-lisensi)
-- [Kontak atau Informasi Pengembang](#-kontak-atau-informasi-pengembang)
 - [Ucapan Terima Kasih](#-ucapan-terima-kasih--acknowledgement)
 
-## 🎮 Demo / Live Preview
+## 🎮 Demo Program
 
-Karena aplikasi ini berjalan di terminal, tidak ada pratinjau langsung secara *online*. Anda dapat menjalankannya secara lokal di komputer Anda dengan mengikuti petunjuk instalasi pada bagian [Cara Instalasi / Setup](#-cara-instalasi--setup).
+*(Coming Soon)*
 
 ## 📸 Tampilan Aplikasi
 
-Berikut adalah tampilan antarmuka pengguna berbasis teks saat aplikasi dijalankan:
+**Awal CLI**
+
 ![Screenshot](Screenshot/1.png)
-
-
-### Contoh Penggunaan Fitur
 
 
 **Menyelesaikan Perbandingan:**
@@ -52,9 +46,29 @@ Berikut adalah tampilan antarmuka pengguna berbasis teks saat aplikasi dijalanka
 ![Screenshot](Screenshot/2.png)
 
 
+**Mencari x dalam persamaan:**
+
+![Screenshot](Screenshot/4.png)
+
+
 **Memfaktorkan Akar Kuadrat:**
 
 ![Screenshot](Screenshot/3.png)
+
+
+**Mengubah desimal ke pecahan dan persen:**
+
+![Screenshot](Screenshot/5.png)
+
+
+**Mengubah pecahan ke desimal dan persen:**
+
+![Screenshot](Screenshot/6.png)
+
+
+**Mengubah persen ke desimal dan pecahan:**
+
+![Screenshot](Screenshot/7.png)
 
 
 ## 🎯 Latar Belakang
@@ -94,7 +108,7 @@ Selain itu, proyek ini juga dibuat sebagai salah satu persyaratan untuk memperol
 - **Math** - Library bawaan Python untuk fungsi matematika
 - **Fractions** - Library bawaan Python untuk menangani operasi pecahan
 
-## 🏗️ Arsitektur / Konsep Sistem
+## 🏗️ Arsitektur
 
 ### Workflow Diagram
 
@@ -128,9 +142,13 @@ graph TD
 kalkulator-multi-fungsi/
 │
 ├── Screenshot/
-│   ├── 1.png               
-│   ├── 2.png                
-│   └── 3.png               
+│   ├── 1.png
+│   ├── 2.png
+│   ├── 3.png
+│   ├── 4.png
+│   ├── 5.png
+│   ├── 6.png
+│   └── 7.png 
 │
 ├── src/
 │   └── main.py              
@@ -142,18 +160,16 @@ kalkulator-multi-fungsi/
 
 ### Penjelasan File
 
-| File / Folder      | Fungsi                                                                                     |
-| ------------------ | ------------------------------------------------------------------------------------------ |
-| `src/main.py`      | Berisi kode utama program kalkulator multi fungsi termasuk logika perhitungan dan menu CLI |
-| `Screenshot/`      | Folder yang berisi gambar tampilan program sebagai dokumentasi penggunaan                  |
-| `Screenshot/1.png` | Contoh tampilan program kalkulator                                                   |
-| `Screenshot/2.png` | Contoh tampilan fitur kalkulator                                                     |
-| `Screenshot/3.png` | Contoh tampilan fitur program                                           |
-| `README.md`        | Dokumentasi lengkap proyek      |
-| `LICENSE.md`       | File lisensi proyek (MIT License)                                |
+| File / Folder         | Fungsi                                                                                     |
+| --------------------- | ------------------------------------------------------------------------------------------ |
+| `src/main.py`         | Berisi kode utama program kalkulator multi fungsi termasuk logika perhitungan dan menu CLI |
+| `Screenshot/`         | Folder yang berisi gambar tampilan program sebagai dokumentasi penggunaan                  |
+| `1.png-7.png`         | Tampilan Aplikasi/Program kalkulator                                                       |
+| `README.md`           | Dokumentasi lengkap proyek                                                                 |
+| `LICENSE.md`          | File lisensi proyek (MIT License)                                                          |
 
 
-## 📥 Cara Instalasi / Setup
+## 📥 Cara Instalasi
 
 ### Prasyarat
 
@@ -168,24 +184,12 @@ kalkulator-multi-fungsi/
    cd kalkulator-multi-fungsi
    ```
 
-2. **Buat Virtual Environment (Opsional)**
-   ```bash
-   # Windows
-   python -m venv venv
-   venv\Scripts\activate
-   
-   # Linux/Mac
-   python3 -m venv venv
-   source venv/bin/activate
-   ```
-
-3. **Install Dependencies**
+2. **Install Dependencies**
    ```bash
    pip install sympy
    ```
-   
 
-4. **Jalankan Aplikasi**
+3. **Jalankan Aplikasi**
    ```bash
    python src/main.py
    ```
@@ -261,11 +265,6 @@ Selama pengembangan proyek ini, saya mempelajari:
 - **Code Organization** - Menstruktur kode dengan fungsi-fungsi yang terpisah dan reusable
 
 
-## 📄 Lisensi
-
-Proyek ini dilisensikan di bawah **MIT License** - lihat file [LICENSE](LICENSE) untuk detail.
-
-
 ## 🙏 Ucapan Terima Kasih
 
 Terima kasih kepada semua pihak yang telah membantu dalam pengembangan proyek ini:
@@ -274,7 +273,6 @@ Terima kasih kepada semua pihak yang telah membantu dalam pengembangan proyek in
 - **Python Community** - Atas dokumentasi dan library yang luar biasa
 - **SymPy Developers** - Atas library komputasi simbolik yang powerful
 - **Shields.io** - Atas layanan badges yang keren
-- **Semua Kontributor** - Yang telah meluangkan waktu untuk berkontribusi
 - **Pengguna** - Yang menggunakan dan memberikan feedback untuk proyek ini
 
 ### Referensi
